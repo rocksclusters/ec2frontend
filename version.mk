@@ -1,0 +1,4 @@
+RELEASE = 0
+COLOR = blue
+
+REDHAT.ROOT = $(PWD)

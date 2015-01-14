@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+
+<graph>
+
+	<changelog>
+	</changelog>
+
+	<description>
+
+	Frontend with single partition
+
+	</description>
+
+
+	<!-- Graph Ordering for Kickstart Generation -->
+
+
+
+	<!-- Graph OO Framework -->
+
+
+	<edge from="server">
+		<to>single-partition</to>
+	</edge>
+        <order head="partition">
+                <tail>single-partition</tail>
+        </order>
+
+</graph>
+
+
