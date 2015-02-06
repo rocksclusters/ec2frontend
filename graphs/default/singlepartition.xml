@@ -21,10 +21,16 @@
 
 	<edge from="server">
 		<to>single-partition</to>
+		<to>fix-services</to>
 	</edge>
         <order head="partition">
                 <tail>single-partition</tail>
         </order>
+	<order head="TAIL">
+		<tail>fix-services</tail>
+	</order>
+
+
 
 </graph>
 

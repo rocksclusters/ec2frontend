@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+
+<kickstart>
+<description> 
+Partitioning required to run in ec2
+</description>
+
+<post>
+# do not rebuild the distro at first reboot
+# why do we do it? Maybe we can disable it in the base roll
+rm /etc/rc.d/rocksconfig.d/post-02-rocks-dist
+yum remove dhcp
+
+</post>
+
+</kickstart> 
